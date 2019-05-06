@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Тест</title>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <ul class="list-group mt-3"></ul>
+            <h1>Тест</h1>
+            <ul class="list-group mt-3"></ul>
+            <form name="travel" action="http://ab-w.net/info.php" method="get">
+                <h5>1. Когда вы чувствуете себя перегруженным, и вам нужно подзарядиться, вы скорее?</h5>
+                <input type="checkbox" name="in_ex" value="E"/> Выйдете куда-то с друзьями. (E)<br/>
+                <input type="checkbox" name="in_ex" value="I"/> Проведете время наедине за чтением или просмотром
+                сериалов. (I)<br/>
+                <ul class="list-group mt-3"></ul>
+                <h5>2. Какое описание подойдет вам лучше всего.</h5>
+                <input type="checkbox" name="sen_int" value="S"/> Вам нравится жить настоящим, вы присутствуете в
+                реальности, обращаете внимание на детали, вы – человек дела. (S)<br/>
+                <input type="checkbox" name="sen_int" value="N"/> Вы любите идеи и теории, вам нравится представлять
+                будущие возможности, вы любите символизм и значение, вы - мечтатель. (N)<br/>
+                <ul class="list-group mt-3"></ul>
+                <h5>3. Когда вам нужно принять важное решение о приеме на работу или расстаться с кем-то, как вы делаете выбор?</h5>
+                <input type="checkbox" name="think_feel" value="T"/> Головой, руководствуясь логикой и рассудком. (T)<br/>
+                <input type="checkbox" name="think_feel" value="F"/> Сердцем, руководствуясь эмоциями и учитывая чувства других. (F)<br/>
+                <ul class="list-group mt-3"></ul>
+                <h5>4. Через месяц у вас долгожданный отпуск, ура! Как к нему готовитесь?</h5>
+                <input type="checkbox" name="judg_perc" value="J"/> Билеты уже куплены, страховка оформлена, план по
+                покорению
+                достопримечательностей составлен. Люблю ко всему готовиться заранее. (J)<br/>
+                <input type="checkbox" name="judg_perc" value="P"/> Спонтанность — моё второе имя. За пару часов до полёта
+                закину в
+                чемодан всё необходимое, а о достопримечательностях поспрашиваю у местных. (P)<br/>
+                <ul class="list-group mt-3"></ul>
+                <button class="btn btn-primary">Завершить</button>
+            </form>
+            <ul class="list-group mt-3"></ul>
+
+            {% if total %}
+<!--            <div class="alert alert-info">Результат: {{total}}</div>-->
+            <div class="alert alert-info" role="alert">
+                <h3 class="alert-heading">результат</h3>
+                <p>Вы </p>
+                <hr>
+                <p class="mb-0">gkg</p>
+            </div>
+            {% endif %}
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
