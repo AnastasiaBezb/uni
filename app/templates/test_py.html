@@ -13,8 +13,11 @@
 <div class="container">
     <div class="row">
         <div class="col">
+            <ul class="list-group mt-4"></ul>
             <ul class="list-group mt-3"></ul>
-            <h1>Тест</h1>
+            <div class="mx-auto" style="width: 600px;"><h1>Тест на определение личности</h1></div>
+            <div class="mx-auto" style="width: 1400px;"><h7>Помните, что этот тест помогает лишь примерно очертить самые яркие стороны вашей личности, поэтому не воспринимайте его результаты слишком уж серьёзно.</h7></div>
+            <ul class="list-group mt-3"></ul>
             <ul class="list-group mt-3"></ul>
             <form>
                 <h5>1. Когда вы чувствуете себя перегруженным, и вам нужно подзарядиться, вы скорее?</h5>
@@ -44,50 +47,12 @@
             </form>
             <ul class="list-group mt-3"></ul>
 
-<!--            <form>-->
-<!--                <div class="form-group">-->
-<!--                    <label for="width">Width</label>-->
-<!--                    <input id="width" class="form-control" name="width" type="text" value="{{width}}"-->
-<!--                           placeholder="width of the room in m" required>-->
-<!--                </div>-->
-<!--                <div class="form-group">-->
-<!--                    <label for="length">Length</label>-->
-<!--                    <input id="length" class="form-control" name="length" type="text" value="{{length}}"-->
-<!--                           placeholder="length of the room in m" required>-->
-<!--                </div>-->
-<!--                <div class="form-group">-->
-<!--                    <label for="height">Height</label>-->
-<!--                    <input id="height" class="form-control" name="height" type="text" value="{{height}}"-->
-<!--                           placeholder="height of the room in m" required>-->
-<!--                </div>-->
-
-<!--                <div class="form-group">-->
-<!--                    <label for="wallpaper_width">Wallpaper width</label>-->
-<!--                    <input id="wallpaper_width" class="form-control" name="wallpaper_width" type="text" value="{{wallpaper_width}}"-->
-<!--                           placeholder="wallpaper width in m" required>-->
-<!--                </div>-->
-
-<!--                <div class="form-group">-->
-<!--                    <label for="wallpaper_length">Wallpaper length</label>-->
-<!--                    <input id="wallpaper_length" class="form-control" name="wallpaper_length" type="text" value="{{wallpaper_length}}"-->
-<!--                           placeholder="wallpaper length in m" required>-->
-<!--                </div>-->
-
-
-<!--                <button class="btn btn-primary">Calculate</button>-->
-<!--            </form>-->
-
-
             {% if total %}
-<!--            <div class="alert alert-info">Результат: {{total}}</div>-->
+
             <div class="alert alert-info" role="alert">
                 <h3 class="alert-heading">{{total}}</h3>
-<!--                <p>{{p}}</p>-->
-<!--                <hr>-->
-<!--                <p class="mb-0">{{prof}}</p>-->
             </div>
             {% endif %}
-
 
         </div>
     </div>
