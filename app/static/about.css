@@ -8,11 +8,11 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	background: #2b2b2b;
+	background: #FFF;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 11pt;
 	font-weight: 300;
-	color: #6c6c6c
+	color: #000
 }
 
 h1, h2, h3
@@ -20,7 +20,7 @@ h1, h2, h3
 	margin: 0;
 	padding: 0;
 	font-weight: 600;
-	color: #454445;
+	color: #000;
 }
 
 p, ol, ul
@@ -30,7 +30,10 @@ p, ol, ul
 
 ol, ul
 {
-	padding: 0;
+	padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
 	list-style: none;
 }
 
@@ -55,7 +58,10 @@ a:hover
 
 .container
 {
-	margin: 0px auto;
+    margin-top: 0em;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
 	width: 1200px;
 }
 
@@ -632,9 +638,12 @@ ul.contact li a.icon-rss:before
 #featured-wrapper
 {
 	overflow: hidden;
-	padding: 6em 0em;
+	padding-top: 6em;
+    padding-right: 6em;
+    padding-bottom: 6em;
+    padding-left: 0em;
 	background: #FFF;
-	text-align: center;
+	/*text-align: center;*/
 }
 
 #featured
@@ -903,7 +912,7 @@ ul.contact li a.icon-rss:before
 	overflow: hidden;
 	margin-bottom: 5em;
 	padding-bottom: 5em;
-	border-bottom: 1px solid rgba(0,0,0,.1);
+
 }
 
 .extra2 .button
