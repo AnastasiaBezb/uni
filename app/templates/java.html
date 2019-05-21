@@ -6,25 +6,21 @@
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet"/>
-
     <link href="../static/about.css" rel="stylesheet" type="text/css" media="all"/>
-    <!--&lt;!&ndash;<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"&ndash;&gt;-->
-    <!--          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
 </head>
 <body>
 <div id="header-wrapper">
     <div id="header" class="container">
         <div id="logo">
-            <h1>get to <a href="http://127.0.0.1:9876/">know</a></h1>
+            <h1>get to <a href="{{ url_for('index') }}">know</a></h1>
         </div>
         <div id="menu">
             <ul>
-                <li><a href="http://127.0.0.1:9876/" accesskey="1" title="">Главная</a></li>
-                <li class="current_page_item"><a href="http://127.0.0.1:9876/news" accesskey="2" title="">Новости</a>
-                </li>
-                <li><a href="http://127.0.0.1:9876/goods" accesskey="3" title="">Полезное</a></li>
-                <li><a href="http://127.0.0.1:9876/tests" accesskey="4" title="">Тесты</a></li>
-                <li><a href="http://127.0.0.1:9876/about" accesskey="5" title="">О проекте</a></li>
+                <li><a href="{{ url_for('index') }}" accesskey="1" title="">Главная</a></li>
+				<li><a href="{{ url_for('news') }}" accesskey="2" title="">Новости</a></li>
+				<li><a href="{{ url_for('goods') }}" accesskey="3" title="">Полезное</a></li>
+				<li><a href="{{ url_for('tests') }}" accesskey="4" title="">Тесты</a></li>
+				<li><a href="{{ url_for('about') }}" accesskey="5" title="">О проекте</a></li>
             </ul>
         </div>
     </div>
@@ -46,7 +42,7 @@
                         <li><a href="https://ru.wikipedia.org/wiki/Java">О языке</a></li>
                     </ol>
                     </li>
-                    <li><a href="http://127.0.0.1:9876/goods">Английский язык</a>
+                    <li><a href="https://englex.ru/english-for-it-specialists/">Английский язык</a>
                     <ol>
                         <li><a href="https://lingualeo.com/ru">Онлайн школа</a></li>
                     </ol>

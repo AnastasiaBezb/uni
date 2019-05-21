@@ -6,24 +6,21 @@
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet"/>
-
     <link href="../static/default.css" rel="stylesheet" type="text/css" media="all"/>
-
 </head>
 <body>
 <div id="header-wrapper">
     <div id="header" class="container">
         <div id="logo">
-            <h1>get to <a href="http://127.0.0.1:9876/">know</a></h1>
+            <h1>get to <a href="{{ url_for('index') }}">know</a></h1>
         </div>
         <div id="menu">
             <ul>
-                <li><a href="http://127.0.0.1:9876/" accesskey="1" title="">Главная</a></li>
-                <li><a href="http://127.0.0.1:9876/news" accesskey="2" title="">Новости</a></li>
-                <li class="current_page_item"><a href="http://127.0.0.1:9876/goods" accesskey="3" title="">Полезное</a>
-                </li>
-                <li><a href="http://127.0.0.1:9876/tests" accesskey="4" title="">Тесты</a></li>
-                <li><a href="http://127.0.0.1:9876/about" accesskey="5" title="">О проекте</a></li>
+                <li><a href="{{ url_for('index') }}" accesskey="1" title="">Главная</a></li>
+				<li><a href="{{ url_for('news') }}" accesskey="2" title="">Новости</a></li>
+				<li class="current_page_item"><a href="{{ url_for('goods') }}" accesskey="3" title="">Полезное</a></li>
+				<li><a href="{{ url_for('tests') }}" accesskey="4" title="">Тесты</a></li>
+				<li><a href="{{ url_for('about') }}" accesskey="5" title="">О проекте</a></li>
             </ul>
         </div>
     </div>
@@ -47,7 +44,7 @@
                     байт-код, поэтому они могут работать на любой компьютерной архитектуре с помощью виртуальной
                     Java-машины. На 2019 год Java — один из самых
                     популярных языков программирования.</p>
-                <a href="http://127.0.0.1:9876/java" class="button">Перейти</a></div>
+                <a href="{{ url_for('java') }}" class="button">Перейти</a></div>
 
             <div class="ebox2">
                 <div class="title">
@@ -58,7 +55,7 @@
                     большой объём полезных функций. Поддерживается разбиение программ на модули, которые, в
                     свою очередь, могут объединяться в пакеты. В 2018 году Python поднялся на 3 место в рейтинге языков
                     программирования Tiobe.</p>
-                <a href="http://127.0.0.1:9876/python" class="button">Перейти</a></div>
+                <a href="{{ url_for('python') }}" class="button">Перейти</a></div>
         </div>
         <div class="extra2 container">
             <div class="ebox1">
@@ -69,7 +66,7 @@
                     компании Microsoft как язык разработки приложений для платформы Microsoft .NET Framework.
                     C# относится к семье языков с C-подобным синтаксисом, из них его синтаксис наиболее близок к C++ и
                     Java.</p>
-                <a href="http://127.0.0.1:9876/csharp" class="button">Перейти</a></div>
+                <a href="{{ url_for('csharp') }}" class="button">Перейти</a></div>
 
             <div class="ebox2">
                 <div class="title">
@@ -79,7 +76,7 @@
                 <p>1С — встроенный язык программирования 1С:Предприятия. Средой исполнения языка является программная
                     платформа «1С:Предприятие». Визуальная среда разработки — «Конфигуратор». Наиболее подобен по своему
                     синтаксису языку Visual Basic.</p>
-                <a href="http://127.0.0.1:9876/1c" class="button">Перейти</a></div>
+                <a href="{{ url_for('1c') }}" class="button">Перейти</a></div>
         </div>
     </div>
 </div>
