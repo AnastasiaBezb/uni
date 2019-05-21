@@ -26,23 +26,23 @@ def start():
         return render_template('tests.html')
 
     @app.route('/about')
-    def contacts():
+    def about():
         return render_template('about.html')
 
     @app.route('/java')
-    def java_lan():
+    def java():
         return render_template('java.html')
 
     @app.route('/python')
-    def python_lan():
+    def python():
         return render_template('python.html')
 
     @app.route('/csharp')
-    def csharp_lan():
+    def csharp():
         return render_template('csharp.html')
 
     @app.route('/1c')
-    def one_c_lan():
+    def one_c():
         return render_template('1c.html')
 
     @app.route('/test_prof')
